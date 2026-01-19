@@ -3,18 +3,17 @@ import Login from "./Login";
 import Signup from "./Signup";
 import Dashboard from "./Dashboard";
 import ProtectedRoute from "./ProtectedRoute";
+import Navbar from "./Navbar"; // Import the navbar
 
 function App() {
   return (
     <Router>
+      <Navbar /> {/* Navbar displayed on all pages */}
       <Routes>
         {/* Default route */}
-        
-        <Route path="/" element={<Navigate to="/Signup" />} />
-
+        <Route path="/" element={<Navigate to="/signup" />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-
         <Route
           path="/dashboard"
           element={
