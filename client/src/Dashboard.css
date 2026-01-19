@@ -1,0 +1,77 @@
+/* src/Dashboard.css */
+
+/* Full screen center alignment with background image */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Glassmorphism Card */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.15); /* Transparent */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  width: 350px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 35px rgba(0,0,0,0.4);
+}
+
+/* Headings */
+.dashboard-card h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: white;
+}
+
+.dashboard-card h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: white;
+}
+
+/* Paragraph */
+.dashboard-card p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+/* Logout button */
+.logout-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.logout-btn:hover {
+  background: #ff7875;
+  transform: scale(1.05);
+}
+
+/* Loading and error messages */
+.loading, .error {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}

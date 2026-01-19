@@ -1,0 +1,63 @@
+/* src/Signup.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background Image */
+.background-container {
+    background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphism Card */
+.signup-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    width: 350px;
+    color: white;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Input Styles */
+.form-control {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px !important;
+    border: none;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+/* Button Styles */
+.btn-signup {
+    background-color: white;
+    color: #555;
+    border-radius: 20px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 0;
+    transition: all 0.3s;
+}
+
+.btn-signup:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+/* Welcome text */
+.welcome-text {
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: white;
+}
